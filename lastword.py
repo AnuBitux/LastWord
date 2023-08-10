@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/home/anubitux/Tools/AddressGen/LastWord/lwve/bin/python3
 
 import hashlib
 import binascii
