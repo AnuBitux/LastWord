@@ -1,5 +1,3 @@
-#!/home/anubitux/Tools/AddressGen/LastWord/lwve/bin/python3
-
 import hashlib
 import binascii
 import random
@@ -19,7 +17,8 @@ class color:
     UNDERLINE = '\033[4m'
     END = '\033[0m'
 
-os.chdir('/home/anubitux/Tools/AddressGen/LastWord/')
+user_folder = os.getlogin()
+os.chdir('/opt/Tools/WalletGen/LastWord/')
 
 # Converts string with 0 and 1 to hexadecimal
 def binToHexa(n):
@@ -144,7 +143,7 @@ while i < (s_len - 1):
             bin_word = bin_word.zfill(11)
             str_bin += bin_word
     else:
-        print(color.RED + 'Unallowrd word!' + color.END)
+        print(color.RED + 'Unallowed word!' + color.END)
 
 # number of bits of entropy corresponding to each mnemonic seed lenght
 ent = 256
